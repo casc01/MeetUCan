@@ -9,7 +9,10 @@ import {
   Picker,
 } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
-const Meeting = () => {
+import PollName from './PollName';
+import { NavigationContainer } from "@react-navigation/native";
+
+const Meeting = ({navigation}) => {
   const [selectedValue, setSelectedValue] = useState("jan");
   const [selectedValue2, setSelectedValue2] = useState("1");
   const [selectedValue3, setSelectedValue3] = useState("2020");
@@ -17,7 +20,11 @@ const Meeting = () => {
     <View style={styles.container}>
       <View style={styles.firstButton}>
         <TouchableOpacity>
-          <Button title="Add New Meeting" color="#468DC6" />
+          <Button
+            title="Add New Meeting"
+            color="#468DC6"
+            onPress={() => navigation.navigate("Meeting")}
+          />
         </TouchableOpacity>
       </View>
       <View style={{ flexDirection: "row", flexWrap: "wrap" }}>

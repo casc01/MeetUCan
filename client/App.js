@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import HomePage from './components/Home';
 import Meeting from './components/Meeting';
 import { createStackNavigator } from '@react-navigation/stack';
+import Poll from './components/PollName';
 
 const Stack = createStackNavigator();
 
@@ -13,15 +14,12 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      
-      
-        <Stack.Navigator initialRouteName = "Home">
-          <Stack.Screen name = "Home" component= {HomePage} />
-          <Stack.Screen name = "Meeting" component= {Meeting} />
-        </Stack.Navigator>
-        
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Poll" component={Poll} />
+        <Stack.Screen name="Home" component={HomePage} />
+        <Stack.Screen name="Meeting" component={Meeting} />
+      </Stack.Navigator>
     </NavigationContainer>
-    
   );
 }
 

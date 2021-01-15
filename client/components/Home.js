@@ -1,8 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import Meeting from './Meeting';
-
 import React from 'react';
 import { Text, View, Image, Button, TouchableOpacity, StyleSheet } from 'react-native';
+import Poll from './PollName';
 
 
 
@@ -27,7 +27,7 @@ const HomePage = ({navigation}) => {
             <View style={styles.text}>
                 <TouchableOpacity>
                     <Button
-                        onPress={() => navigation.navigate('Meeting')}
+                        onPress={() => navigation.navigate('Poll')}
                         title="Create New Poll"
                         color="#007AFF"
                     />
