@@ -79,7 +79,7 @@ const Meeting = () => {
 //fix the dates part
 const styles = StyleSheet.create({
   textBox1: {
-    marginTop:-40,
+    marginTop:-90,
     marginBottom:30,
     height: 40,
     width: 200,
@@ -95,17 +95,17 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFF0E0",
     textAlign: "center",
     right: 110,
-    top: -105,
+    top: -135,
     borderWidth: 2.5,
   },
   text2: {
-    marginTop: -28,
+    marginTop: -78,
     width: 200,
     left: 45,
   },
   text: {
     margin: 30,
-    top:40,
+    top:10,
     right:-120,
     borderWidth: 5,
     borderRadius: 12,

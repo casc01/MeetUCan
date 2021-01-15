@@ -18,10 +18,8 @@ const HomePage = ({navigation}) => {
             <Image
                 source={require('./ToucanFinal.png')}
                 style={{
-                    flex: 1,
-                    width: null,
-                    height: null,
                     resizeMode: 'contain',
+                    width: 415,
                 }}
             />
             <Text
