@@ -20,7 +20,7 @@ const Poll = ({ navigation }) => {
         style={{
           textAlign: "center",
           fontSize: 60,
-          marginTop: 90,
+          marginTop: '10%',
           color: "#468DC6",
           fontFamily: "Courier-Bold",
         }}
@@ -49,8 +49,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   textBox1: {
-    marginTop: 50,
-    marginBottom: 30,
+    marginTop: '10%',
     height: 50,
     width: 280,
     left: 70,
@@ -61,7 +60,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: "Courier-Bold",
-    marginTop:20,
+    marginTop:'8%',
     borderWidth: 2.5,
     padding: 12,
     borderRadius: 19,

@@ -12,7 +12,7 @@ const HomePage = ({navigation}) => {
 
         <View>
             <Text
-                style={{ textAlign: "center", fontSize: 60, marginTop: 90, color: '#468DC6', fontFamily: "Courier-Bold" }}
+                style={{ textAlign: "center", fontSize: 60, marginTop: '10%', color: '#468DC6', fontFamily: "Courier-Bold" }}
             >MeetUcan</Text>
 
             <Image
@@ -23,7 +23,7 @@ const HomePage = ({navigation}) => {
                 }}
             />
             <Text
-                style={{ textAlign: "center", marginBottom: 25, color: '#006AFF', fontFamily: "Courier-Bold" }}>You can meet with MeetUcan!</Text>
+                style={{ textAlign: "center", marginBottom: '15%', color: '#006AFF', fontFamily: "Courier-Bold" }}>You can meet with MeetUcan!</Text>
             <View style={styles.text}>
                 <TouchableOpacity>
                     <Button
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontFamily: "Courier-Bold",
-        marginBottom: 50,
+        marginBottom: '10%',
         borderWidth: 2.5,
         padding: 12,
         borderRadius: 19,
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
 
     },
     text2: {
-        marginBottom: 100,
+        marginBottom: '20%',
         borderWidth: 2.5,
         padding: 12,
         borderRadius: 19,

@@ -63,6 +63,29 @@ const Meeting = ({navigation}) => {
         <Picker.Item label="6" value="six" color="#468DC6" />
         <Picker.Item label="7" value="seven" color="#468DC6" />
         <Picker.Item label="8" value="eight" color="#468DC6" />
+        <Picker.Item label="9" value="eight" color="#468DC6" />
+        <Picker.Item label="10" value="eight" color="#468DC6" />
+        <Picker.Item label="11" value="eight" color="#468DC6" />
+        <Picker.Item label="12" value="eight" color="#468DC6" />
+        <Picker.Item label="13" value="eight" color="#468DC6" />
+        <Picker.Item label="14" value="eight" color="#468DC6" />
+        <Picker.Item label="15" value="eight" color="#468DC6" />
+        <Picker.Item label="16" value="eight" color="#468DC6" />
+        <Picker.Item label="17" value="eight" color="#468DC6" />
+        <Picker.Item label="18" value="eight" color="#468DC6" />
+        <Picker.Item label="19" value="eight" color="#468DC6" />
+        <Picker.Item label="20" value="eight" color="#468DC6" />
+        <Picker.Item label="21" value="eight" color="#468DC6" />
+        <Picker.Item label="22" value="eight" color="#468DC6" />
+        <Picker.Item label="23" value="eight" color="#468DC6" />
+        <Picker.Item label="24" value="eight" color="#468DC6" />
+        <Picker.Item label="25" value="eight" color="#468DC6" />
+        <Picker.Item label="26" value="eight" color="#468DC6" />
+        <Picker.Item label="27" value="eight" color="#468DC6" />
+        <Picker.Item label="28" value="eight" color="#468DC6" />
+        <Picker.Item label="29" value="eight" color="#468DC6" />
+        <Picker.Item label="30" value="eight" color="#468DC6" />
+        <Picker.Item label="31" value="eight" color="#468DC6" />
       </Picker>
       <Picker
         selectedValue3={selectedValue3}
@@ -72,8 +95,8 @@ const Meeting = ({navigation}) => {
           setSelectedValue3(itemValue3)
         }
       >
+        <Picker.Item label="2021" value="2021" color="#468DC6" />
         <Picker.Item label="2020" value="2020" color="#468DC6" />
-        <Picker.Item label="2019" value="2019" color="#468DC6" />
       </Picker>
 
       <View style={[styles.text]}>
@@ -90,34 +113,28 @@ const Meeting = ({navigation}) => {
 //fix the dates part
 const styles = StyleSheet.create({
   textBox1: {
-    marginTop:-90,
-    marginBottom:30,
+    marginTop: "-20%",
     height: 40,
     width: 200,
-    left: -20,
     backgroundColor: "white",
     textAlign: "center",
-    right: 20,
     borderWidth: 2.5,
   },
   firstButton: {
-    marginLeft: 10,
     color: "#FFF0E0",
     backgroundColor: "white",
     textAlign: "center",
     right: 110,
-    top: -135,
+    top: "-17%",
     borderWidth: 2.5,
   },
   text2: {
-    marginTop: -78,
-    width: 200,
-    left: 45,
+    marginTop: "-17%",
+    width: 100,
   },
   text: {
     margin: 30,
-    top:10,
-    right:-120,
+    right: "-20%",
     borderWidth: 5,
     borderRadius: 12,
     backgroundColor: "white",
@@ -125,7 +142,7 @@ const styles = StyleSheet.create({
     borderColor: "#A04052",
   },
   container: {
-    top: 140,
+    top: "15%",
     flex: 1,
     paddingTop: 40,
     alignItems: "center",
@@ -143,7 +160,7 @@ const styles = StyleSheet.create({
     color: "blue",
   },
   onePicker: {
-    marginTop: 7,
+    marginTop: "2%",
     width: 300,
     backgroundColor: "white",
     borderColor: "#A04052",
@@ -155,10 +172,10 @@ const styles = StyleSheet.create({
     color: "blue",
   },
   twoPickers: {
-    marginTop: 7,
+    marginTop: "2%",
     width: 300,
     borderRadius: 0,
-    height: 88,
+    height: 98,
     backgroundColor: "white",
     borderColor: "#A04052",
     borderBottomWidth: 10,
