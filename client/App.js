@@ -7,6 +7,7 @@ import HomePage from './components/Home';
 import Meeting from './components/Meeting';
 import { createStackNavigator } from '@react-navigation/stack';
 import Poll from './components/PollName';
+import People from './components/People';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ export default function App() {
         <Stack.Screen name="Poll" component={Poll} />
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="Meeting" component={Meeting} />
+        <Stack.Screen name="People" component={People} />
       </Stack.Navigator>
     </NavigationContainer>
   );

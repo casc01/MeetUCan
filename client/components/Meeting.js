@@ -11,6 +11,7 @@ import {
 import { TextInput } from "react-native-gesture-handler";
 import PollName from './PollName';
 import { NavigationContainer } from "@react-navigation/native";
+import People from './People';
 
 const Meeting = ({navigation}) => {
   const [selectedValue, setSelectedValue] = useState("jan");
@@ -77,7 +78,10 @@ const Meeting = ({navigation}) => {
 
       <View style={[styles.text]}>
         <TouchableOpacity>
-          <Button title="Submit" />
+          <Button
+            title="Submit"
+            onPress={() => navigation.navigate("People")}
+          />
         </TouchableOpacity>
       </View>
     </View>
@@ -91,7 +95,7 @@ const styles = StyleSheet.create({
     height: 40,
     width: 200,
     left: -20,
-    backgroundColor: "#FFF0E0",
+    backgroundColor: "white",
     textAlign: "center",
     right: 20,
     borderWidth: 2.5,
@@ -99,7 +103,7 @@ const styles = StyleSheet.create({
   firstButton: {
     marginLeft: 10,
     color: "#FFF0E0",
-    backgroundColor: "#FFF0E0",
+    backgroundColor: "white",
     textAlign: "center",
     right: 110,
     top: -135,
@@ -116,7 +120,7 @@ const styles = StyleSheet.create({
     right:-120,
     borderWidth: 5,
     borderRadius: 12,
-    backgroundColor: "#FFF0E0",
+    backgroundColor: "white",
     fontFamily: "Courier",
     borderColor: "#A04052",
   },
@@ -129,7 +133,7 @@ const styles = StyleSheet.create({
   },
   picker: {
     width: 300,
-    backgroundColor: "#FFF0E0",
+    backgroundColor: "white",
     borderRadius: 0,
     borderColor: "#A04052",
     borderTopWidth: 10,
@@ -141,7 +145,7 @@ const styles = StyleSheet.create({
   onePicker: {
     marginTop: 7,
     width: 300,
-    backgroundColor: "#FFF0E0",
+    backgroundColor: "white",
     borderColor: "#A04052",
     borderRadius: 0,
     borderWidth: 8,
@@ -155,7 +159,7 @@ const styles = StyleSheet.create({
     width: 300,
     borderRadius: 0,
     height: 88,
-    backgroundColor: "#FFF0E0",
+    backgroundColor: "white",
     borderColor: "#A04052",
     borderBottomWidth: 10,
     borderWidth: 8,

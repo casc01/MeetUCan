@@ -1,20 +1,4 @@
-/*import { NavigationContainer } from "@react-navigation/native";
-import React from "react";
-import { render } from "react-dom";
-import {
-  Text,
-  View,
-  Image,
-  Button,
-  TouchableOpacity,
-  StyleSheet,
-} from "react-native";
 
-const PollName = ({navigation}) => {
-    <View>
-        <Text>heyyyyy</Text>
-    </View>
-}*/
 import { NavigationContainer } from "@react-navigation/native";
 import Meeting from "./Meeting";
 import React from "react";
