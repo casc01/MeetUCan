@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontFamily: "Courier-Bold",
-        marginBottom: '10%',
+        marginBottom: '3%',
         borderWidth: 2.5,
         padding: 12,
         borderRadius: 19,

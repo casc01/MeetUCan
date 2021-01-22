@@ -12,6 +12,7 @@ import {
 import { TextInput } from "react-native-gesture-handler";
 
 const People = ({ navigation }) => {
+    const [people, setPeople] = useState(null);
     return (
       <View>
         <Text
@@ -31,7 +32,9 @@ const People = ({ navigation }) => {
         <View style={styles.text}>
           <TouchableOpacity>
             <Button
-              onPress={() => navigation.navigate("Meeting")}
+              onPress={() => navigation.navigate("Meeting", {
+                  People: people,
+              })}
               title="Submit"
               color="#007AFF"
             />

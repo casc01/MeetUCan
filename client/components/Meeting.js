@@ -13,7 +13,12 @@ import PollName from './PollName';
 import { NavigationContainer } from "@react-navigation/native";
 import People from './People';
 
-const Meeting = ({navigation}) => {
+
+const Meeting = ({route, navigation}) => {
+    const { pollName } = route.params;
+    console.log(pollName)
+    
+
   const [selectedValue, setSelectedValue] = useState("jan");
   const [selectedValue2, setSelectedValue2] = useState("1");
   const [selectedValue3, setSelectedValue3] = useState("2020");
@@ -24,7 +29,10 @@ const Meeting = ({navigation}) => {
           <Button
             title="Add New Meeting"
             color="#468DC6"
-            onPress={() => navigation.navigate("Meeting")}
+            onPress={() => navigation.navigate("Meeting", {
+              value: [selectedValue, selectedValue2,selectedValue3],
+            }
+              )}
           />
         </TouchableOpacity>
       </View>

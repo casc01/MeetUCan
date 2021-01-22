@@ -1,7 +1,7 @@
 
 import { NavigationContainer } from "@react-navigation/native";
 import Meeting from "./Meeting";
-import React from "react";
+import React, { useState } from "react";
 import {
   Text,
   View,
@@ -12,7 +12,9 @@ import {
 } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
 
-const Poll = ({ navigation }) => {
+var Poll = ({ navigation, route }) => {
+    //fix the useState part - 
+const [poll, setPoll] = useState(null);
   const handlePress = () => false;
   return (
     <View>
@@ -33,7 +35,10 @@ const Poll = ({ navigation }) => {
       <View style={styles.text}>
         <TouchableOpacity>
           <Button
-            onPress={() => navigation.navigate("Meeting")}
+            onPress={() => navigation.navigate("Meeting", {
+                pollName: poll,
+            }
+            )}
             title="Submit"
             color="#007AFF"
           />
