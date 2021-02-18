@@ -13,12 +13,10 @@ import PollName from './PollName';
 import { NavigationContainer } from "@react-navigation/native";
 import People from './People';
 
-
+//do dropwdown for meetings akready created
 const Meeting = ({route, navigation}) => {
     const { pollName } = route.params;
     console.log(pollName)
-    
-
   const [selectedValue, setSelectedValue] = useState("jan");
   const [selectedValue2, setSelectedValue2] = useState("1");
   const [selectedValue3, setSelectedValue3] = useState("2020");

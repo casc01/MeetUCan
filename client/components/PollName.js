@@ -14,7 +14,7 @@ import { TextInput } from "react-native-gesture-handler";
 
 var Poll = ({ navigation, route }) => {
     //fix the useState part - 
-const [poll, setPoll] = useState(null);
+const [poll, setPoll] = useState("");
   const handlePress = () => false;
   return (
     <View>
@@ -30,13 +30,14 @@ const [poll, setPoll] = useState(null);
         Create Poll
       </Text>
       <View>
-        <TextInput style={[styles.textBox1]}></TextInput>
+        <TextInput style={[styles.textBox1]} onChangeText={text => setPoll(text)}></TextInput>
       </View>
       <View style={styles.text}>
         <TouchableOpacity>
           <Button
             onPress={() => navigation.navigate("Meeting", {
                 pollName: poll,
+                
             }
             )}
             title="Submit"
