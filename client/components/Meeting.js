@@ -14,6 +14,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import People from './People';
 
 //do dropwdown for meetings akready created
+//work on state for saving the meeting
 const Meeting = ({route, navigation}) => {
     const { pollName } = route.params;
     console.log(pollName)
