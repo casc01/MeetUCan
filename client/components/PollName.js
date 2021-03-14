@@ -1,6 +1,7 @@
 
 import { NavigationContainer } from "@react-navigation/native";
 import Meeting from "./Meeting";
+//import AddMeeting from "./MeetingFirstScreen";
 import React, { useState } from "react";
 import {
   Text,
@@ -37,8 +38,7 @@ const [poll, setPoll] = useState("");
           <Button
             onPress={() => navigation.navigate("Meeting", {
                 pollName: poll,
-                
-            }
+                }
             )}
             title="Submit"
             color="#007AFF"

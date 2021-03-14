@@ -8,7 +8,8 @@ import Meeting from './components/Meeting';
 import { createStackNavigator } from '@react-navigation/stack';
 import Poll from './components/PollName';
 import People from './components/People';
-
+import DateTime from './components/MeetingSecond';
+import AddMeeting from "./components/MeetingFirstScreen";
 const Stack = createStackNavigator();
 
 
@@ -20,6 +21,8 @@ export default function App() {
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="Meeting" component={Meeting} />
         <Stack.Screen name="People" component={People} />
+        <Stack.Screen name="AddMeeting" component={AddMeeting} />
+        <Stack.Screen name="DateTime" component={DateTime} />
       </Stack.Navigator>
     </NavigationContainer>
   );
