@@ -16,7 +16,7 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="People">
         <Stack.Screen name="Poll" component={Poll} />
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="Meeting" component={Meeting} />
