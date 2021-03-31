@@ -36,7 +36,7 @@ const [poll, setPoll] = useState("");
       <View style={styles.text}>
         <TouchableOpacity>
           <Button
-            onPress={() => navigation.navigate("Meeting", {
+            onPress={() => navigation.navigate("AddMeeting", {
                 pollName: poll,
                 }
             )}

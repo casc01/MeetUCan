@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import {View, Button, Platform, StyleSheet, Text} from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
+import { NavigationContainer } from '@react-navigation/native';
+import AddMeeting from './MeetingFirstScreen';
 
-const DateTime = ({navigation}) => {
+const DateTime = ({route, navigation}) => {
   const [date, setDate] = useState(new Date(1598051730000));
   const [mode, setMode] = useState('date');
   const [show, setShow] = useState(false);
@@ -32,12 +34,12 @@ const DateTime = ({navigation}) => {
         <View style = {styles.text} >
             <Button 
                 onPress={showDatepicker} 
-                title="Click to pick date!" />
+                title="Choose date" />
         </View>
         <View style = {styles.text} >
             <Button 
                 onPress={showTimepicker} 
-                title="Click to choose time!" />
+                title="Choose time" />
         </View>
 
       </View>

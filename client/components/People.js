@@ -12,7 +12,7 @@ import {
 import { TextInput } from "react-native-gesture-handler";
 
 const People = ({ navigation }) => {
-    const [people, setPeople] = useState(null);
+    //const [people, setPeople] = useState(null);
     return (
       <View>
         <Text
@@ -49,7 +49,7 @@ const People = ({ navigation }) => {
             fontFamily: "Courier-Bold",
           }}
         >
-          Existing Members
+          
         </Text>
       </View>
     );

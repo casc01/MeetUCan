@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
- 
 import { StyleSheet, View, Button, Text } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { NavigationContainer } from "@react-navigation/native";
+import DateTime from './MeetingSecond';
  
-const AddMeeting = ({navigation}) => {
-    //const { pollName } = route.params;
+const AddMeeting = ({route, navigation}) => {
+    const { pollName } = route.params;
         
         return (
             <View style={styles.MainContainer} >
@@ -17,6 +17,8 @@ const AddMeeting = ({navigation}) => {
                         <Button
                             title="Create Meeting"
                             color="#007AFF"
+                            onPress={() => navigation.navigate("DateTime")}
+                            
                         />
                     </TouchableOpacity>
                 </View>
