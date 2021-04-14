@@ -17,7 +17,7 @@ const AddMeeting = ({route, navigation}) => {
                         <Button
                             title="Create Meeting"
                             color="#007AFF"
-                            onPress={() => navigation.navigate("DateTime")}
+                            onPress={() => navigation.navigate('DateTime')}
                             
                         />
                     </TouchableOpacity>
