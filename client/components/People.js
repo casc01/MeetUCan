@@ -14,7 +14,19 @@ import { TextInput } from "react-native-gesture-handler";
 //import React, { useState } from 'react';
 
 const People = ({ navigation }) => {
-    const [people, setPeople] = useState(null);
+    const [people, setPeople] = useState([]);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+    //const [people, setPeople] = useState(null);
     return (
       <View>
         <Text
@@ -28,20 +40,13 @@ const People = ({ navigation }) => {
         >
           Add Members
         </Text>
-        <View>
-          <TextInput style={[styles.textBox1]}></TextInput>
-        </View>
-        <View style={styles.text}>
-          <TouchableOpacity>
-            <Button
-              onPress={() => navigation.navigate("Meeting", {
-                  People: people,
-              })}
-              title="Submit"
-              color="#007AFF"
-            />
-          </TouchableOpacity>
-        </View>
+        <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
         <Text
           style={{
             textAlign: "left",
@@ -51,10 +56,11 @@ const People = ({ navigation }) => {
             fontFamily: "Courier-Bold",
           }}
         >
-          Existing Members
+          
         </Text>
       </View>
     );
+        
 }
 export default People;
 const styles = StyleSheet.create({
