@@ -1,6 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import Meeting from "./Meeting";
 import React from "react";
+import {useState} from "react";
 import {
   Text,
   View,
@@ -10,6 +11,7 @@ import {
   StyleSheet,
 } from "react-native";
 import { TextInput } from "react-native-gesture-handler";
+//import React, { useState } from 'react';
 
 const People = ({ navigation }) => {
     const [people, setPeople] = useState(null);

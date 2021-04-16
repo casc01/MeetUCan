@@ -10,19 +10,21 @@ import Poll from './components/PollName';
 import People from './components/People';
 import DateTime from './components/MeetingSecond';
 import AddMeeting from "./components/MeetingFirstScreen";
+import ListPeople from "./components/Person"
 const Stack = createStackNavigator();
 
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="People">
+      <Stack.Navigator initialRouteName="ListPeople">
         <Stack.Screen name="Poll" component={Poll} />
         <Stack.Screen name="Home" component={HomePage} />
         <Stack.Screen name="Meeting" component={Meeting} />
         <Stack.Screen name="People" component={People} />
         <Stack.Screen name="AddMeeting" component={AddMeeting} />
         <Stack.Screen name="DateTime" component={DateTime} />
+        <Stack.Screen name="ListPeople" component={ListPeople} />
       </Stack.Navigator>
     </NavigationContainer>
   );
